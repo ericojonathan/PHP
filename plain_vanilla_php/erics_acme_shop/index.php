@@ -14,7 +14,7 @@
 				<div id="sample-products" style="margin-top:10px">
 					<div class="columns">
 						<div class="column is-2">
-							<div class="card">
+							<div class="card is-rounded" style="border:1px solid grey;border-bottom-left-radius:10%;box-shadow:5px 5px 8px lightgray;height:100%">
 								<div class="card-image">
 									<img src="/assets/images/jewelry_bracelet.svg"></img>
 								</div>
@@ -25,6 +25,31 @@
 								</div>
 							</div>
 						</div>
+						<div class="column is-2">
+							<div class="card is-rounded" style="border:1px solid grey;box-shadow:5px 5px 8px lightgray;height:100%">
+								<div class="card-image">
+									<img src="/assets/images/little_santa.jpg"></img>
+								</div>
+								<div class="card-content">
+										<h1 class="title" style="text-align:center">
+											Little Santa
+										</h1>
+								</div>
+							</div>
+						</div>
+						<div class="column is-2">
+							<div class="card is-rounded" style="border:1px solid grey;box-shadow:5px 5px 8px lightgray;height:100%">
+								<div class="card-image">
+									<img src="/assets/images/romantic_candles.jpg"></img>
+								</div>
+								<div class="card-content">
+										<h1 class="title is-4" style="text-align:center">
+											Romantic Candles	
+										</h1>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
