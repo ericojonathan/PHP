@@ -16,7 +16,8 @@
 				<p>Welcome to Eric's ACME shop, where you can find nice small things to buy that are perfect for you or as gifts for your loved ones and friends.</p>
 				<p>Have fun shopping with us!</p>
 				<div id="sample-products">
-
+					<div class="columns">
+					</div>
 				</div>
 			</div>
 		</div>
