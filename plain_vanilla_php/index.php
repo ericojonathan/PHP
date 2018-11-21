@@ -4,12 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/assets/css/bulma.min.css">
-		<title>Plain Vanilla PHP</title>
+		<title>Eric's ACME Shop</title>
 	</head>
 	<body>
 		<div class="hero">
 			<div class="hero-body">
-				<h1>Plain Vanilla PHP</h1>		
+				<h1 class="title">Eric's ACME Shop</h1>		
+				<p>Welcome to Eric's ACME shop, where you can find nice small things to buy that are perfect for you or as gifts for your loved ones and friends.</p>
+				<p>Have fun shopping with us!</p>
 			</div>
 		</div>
 	</body>
