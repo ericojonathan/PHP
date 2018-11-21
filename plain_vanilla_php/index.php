@@ -10,8 +10,14 @@
 		<div class="hero">
 			<div class="hero-body">
 				<h1 class="title">Eric's ACME Shop</h1>		
+				<h2>Where Small Things Count</h2>
+			</div>
+			<div class="container">
 				<p>Welcome to Eric's ACME shop, where you can find nice small things to buy that are perfect for you or as gifts for your loved ones and friends.</p>
 				<p>Have fun shopping with us!</p>
+				<div id="sample-products">
+
+				</div>
 			</div>
 		</div>
 	</body>
