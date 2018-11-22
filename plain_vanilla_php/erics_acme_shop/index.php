@@ -1,15 +1,18 @@
 <?php
 	$PageTitle = "Eric's ACME Shop";
-?>
+?> 
 
 <style>
 ul li:before {
 	font-family: "Webdings";
 	content: "= ";
 }
+
 </style>
 
+<?php include_once("header.php"); ?>
 <script>
+// Vanilla Javascript
 function showLogin(show){
 	if(show == true){
 		document.getElementById('modal-login').classList.add('is-active');
@@ -26,18 +29,20 @@ function showSignUp(show){
 	}
 }
 
-</script>
+// JQuery
+$(document).ready(function(){
+	$(".card").mouseover(function(){
+		$(this).css("box-shadow","5px 5px 8px gray");
+		$(this).css("height","110%");
+	});
 
-<?php include_once("header.php"); ?>
-	<div id="login" class="box" style="float:right;font-size:14px;margin:15px;width:165px;max-height:60px">
-		<div class="columns">
-			<div class="column">
-				<a onclick="showLogin(true)">Login</a>
-			</div>
-			<div class="column">
-				<a onclick="showSignUp(true)">Sign Up</a>
-			</div>
-		</div>	
+$(".card").mouseout(function(){
+		$(this).css("box-shadow","2px 2px 8px lightgray");
+		$(this).css("height", "100%");
+	});
+
+});
+</script>
 
 		<div id="modal-login" class="modal">
 			<div class="modal-background"></div>
@@ -83,9 +88,11 @@ function showSignUp(show){
 							<input id="signup_email_txt" class="input" type="text" placeholder="E-Mail" style="margin:15px;max-width:475px">
 							<input id="signup_username_txt" class="input" type="text" placeholder="username" style="margin:15px;max-width:475px">
 							<input id="signup_password_txt" class="input" type="password" placeholder="password" style="margin:15px;max-width:475px">
+							<input id="retype_signup_password_txt" class="input" type="password" placeholder="retype password" style="visibility:hidden;margin:15px;max-width:475px">
 						</div>
 					</div>
-									</section>
+				</section>
+
 				<footer class="modal-card-foot" style="justify-content:flex-end">
 					<button id="cancel_btn" class="button" onclick="showSignUp(false)">Cancel</button>
 					<button id="login_btn"  class="button is-primary">Sign Up</button>
@@ -93,29 +100,45 @@ function showSignUp(show){
 			</div>
 		</div>
 
+	<div>
+
+	<div id="login" class="panels is-pulled-right" style="float:right;font-size:14px;margin:15px;min-width:125px;max-width:165px;max-height:60px">
+		<div class="columns is-pulled-right">
+			<div class="column is-5">
+				<a onclick="showLogin(true)">Login</a>
+			</div>
+			<div class="column">
+				<a onclick="showSignUp(true)">Sign Up</a>
+			</div>
+		</div>	
 	</div>
+
 	<div class="hero">
 		<div class="hero-body">
 			<h1 class="title"><?= $PageTitle; ?></h1>
 			<h2 class="subtitle">Where Small Things Count.</h2>
 		</div>
 	</div>
+
   <div class="container">
 				<p>Welcome to Eric's ACME shop, where you can find nice small things to buy that are perfect for you or as gifts for your loved ones and friends.</p>
 				<p>Have fun shopping with us!</p>
 				<div id="sample-products" style="margin-top:10px;">
 					<div class="columns" style="height:370px">
 						<div class="column is-2">
-							<div class="card is-rounded" style="border:1px solid grey;border-bottom-left-radius:10%;box-shadow:5px 5px 8px lightgray;height:100%">
+							<a href="">
+								<div class="card is-rounded" clearfix style="border:1px solid grey;border-bottom-left-radius:10%;box-shadow:5px 5px 8px lightgray;height:100%">
 								<div class="card-image">
-									<img src="/assets/images/jewelry_bracelet.svg"></img>
+									<img src="/assets/images/jewelry_bracelet.svg" style="max-height:300px"></img>
 								</div>
 								<div class="card-content">
-										<h1 class="title" style="text-align:center">
-											Gold Bracelet
-										</h1>
+									<h1 class="title" style="text-align:center">
+										Gold Bracelet
+									</h1>
 								</div>
 							</div>
+
+							</a>
 						</div>
 						<div class="column is-2">
 							<div class="card is-rounded" style="border:1px solid grey;box-shadow:5px 5px 8px lightgray;height:100%">
