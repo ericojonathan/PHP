@@ -2,6 +2,16 @@
 	$PageTitle = "Eric's ACME Shop";
 ?>
 <?php include_once("header.php"); ?>
+	<div class="box" style="float:right;font-size:14px;margin:15px;width:165px">
+		<div class="columns">
+			<div class="column">
+				<a>Login</a>
+			</div>
+			<div class="column">
+				<a>Sign up</a>
+			</div>
+		</div>	
+	</div>
 	<div class="hero">
 		<div class="hero-body">
 			<h1 class="title"><?= $PageTitle; ?></h1>
