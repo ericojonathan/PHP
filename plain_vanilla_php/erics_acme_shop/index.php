@@ -49,6 +49,30 @@
 								</div>
 							</div>
 						</div>
+						<div class="column is-2">
+							<div class="card is-rounded" style="border:1px solid grey;box-shadow:5px 5px 8px lightgray;height:100%">
+								<div class="card-image">
+									<img src="/assets/images/small_xmas_tree.jpg"></img>
+								</div>
+								<div class="card-content">
+										<h1 class="title is-4" style="text-align:center">
+											Small Christmas Tree
+										</h1>
+								</div>
+							</div>
+						</div>
+						<div class="column is-2">
+							<div class="card is-rounded" style="border:1px solid grey;box-shadow:5px 5px 8px lightgray;height:100%">
+								<div class="card-image">
+									<img src="/assets/images/gold_keychain.jpg"></img>
+								</div>
+								<div class="card-content">
+										<h1 class="title is-4" style="text-align:center">
+											Gold Keychain
+										</h1>
+								</div>
+							</div>
+						</div>
 
 					</div>
 				</div>
