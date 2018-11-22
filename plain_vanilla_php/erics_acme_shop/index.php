@@ -7,10 +7,10 @@ ul li:before {
 	font-family: "Webdings";
 	content: "= ";
 }
-
 </style>
 
 <?php include_once("header.php"); ?>
+
 <script>
 // Vanilla Javascript
 function showLogin(show){
